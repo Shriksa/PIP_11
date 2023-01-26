@@ -7,6 +7,9 @@ public class Main {
     }
 
     public static int[][] sumtablice(int n, int[][] tablica1, int[][] tablica2) {
+        if (tablica1.length != tablica2.length || tablica1[0].length != tablica2[0].length) {
+            System.out.println("Nie mozliwe dodawanie.");
+        }
         int[][] sum = new int[n][n];
         for (int i = 0; i < tablica1.length; i++) {
             for (int j = 0; j < tablica1[0].length; j++) {
